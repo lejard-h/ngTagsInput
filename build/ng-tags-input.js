@@ -5,7 +5,7 @@
  * Copyright (c) 2013-2015 Michael Benford
  * License: MIT
  *
- * Generated at 2015-09-08 15:37:37 +0200
+ * Generated at 2015-09-14 09:44:16 +0200
  */
 (function() {
 'use strict';
@@ -1141,7 +1141,7 @@ tagsInput.run(["$templateCache", function($templateCache) {
   );
 
   $templateCache.put('ngTagsInput/auto-complete.html',
-    "<div class=\"autocomplete\" ng-if=\"suggestionList.visible\"><ul class=\"suggestion-list\"><li class=\"suggestion-item\" ng-repeat=\"item in suggestionList.items track by $index\" ng-class=\"{selected: item == suggestionList.selected}\" ng-click=\"addSuggestionByIndex($index)\" ng-mouseenter=\"suggestionList.select($index)\"><ti-autocomplete-match data=\"::item\"></ti-autocomplete-match></li></ul></div>"
+    "<div class=\"autocomplete\" ng-if=\"suggestionList.visible\"><ul class=\"suggestion-list\"><li class=\"suggestion-item\" ng-repeat=\"item in suggestionList.items track by track(item)\" ng-class=\"{selected: item == suggestionList.selected}\" ng-click=\"addSuggestionByIndex($index)\" ng-mouseenter=\"suggestionList.select($index)\"><ti-autocomplete-match data=\"::item\"></ti-autocomplete-match></li></ul></div>"
   );
 
   $templateCache.put('ngTagsInput/auto-complete-match.html',
